@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotLuck Guest List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <h3>PotLuck Guest List</h3>
+
+</head>
+<body class="container " >
+    <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-group">
+                 <label for="family-name">Family</label>
+                 <input type="text" class="form-control" id="family-name">
+              </div>
+            </div>
+            <div class="col-sm">
+             <div class="form-group">
+                 <label for="party-number">Number of Family Members</label>
+                 <input type="text" class="form-control" id="party-number" >
+              </div>
+            </div>
+          </div>
+         <div class="row">
+             <div class="col-sm">
+                 <div class="form-group">
+                     <label for="food">Food Being Brought</label>
+                     <input type="text" class="form-control" id="food">
+                  </div>
+             </div>
+         </div>
+         <div>
+             <button id="add" class="btn btn-success from-control">Add</button>
+        </div>
+        </div>
+     </div>
+
+    
+
+     <table id="list" class="table table-success ">
+        <tr>
+           <th>Family</th>
+           <th>Family Members</th>
+           <th>Food Being Brought</th>
+        </tr>
+
+     </table>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
